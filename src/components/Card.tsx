@@ -19,10 +19,10 @@ export default function Card({ task, onDragStart }: CardProps) {
 		<div
 			draggable
 			onDragStart={handleDragStart}
-			className="rounded-md bg-white shadow hover:shadow-md transition-shadow border border-gray-200 p-3 cursor-move select-none"
+			className="rounded-md bg-amber-50 shadow hover:shadow-md transition-shadow border border-gray-200 p-3 cursor-move select-none"
 			aria-grabbed="true"
 		>
-			<p className="text-sm text-gray-800">{task.title}</p>
+			<p className="text-sm text-gray-800 font-medium">{task.title}</p>
 		</div>
 	);
 }

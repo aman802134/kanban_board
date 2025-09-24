@@ -35,7 +35,7 @@ export default function Column({ title, status, tasks, onDropTask, onCardDragSta
 			<div
 				onDragOver={handleDragOver}
 				onDrop={handleDrop}
-				className="min-h-[200px] rounded-lg border border-gray-200 bg-gray-50 p-3 flex flex-col gap-3"
+				className="max-h-[250px] h-[250px] overflow-y-auto rounded-lg border border-gray-200 bg-gray-50 p-3 flex flex-col gap-3"
 			>
 				{tasks.map((task) => (
 					<Card key={task.id} task={task} onDragStart={onCardDragStart ?? (() => {})} />
